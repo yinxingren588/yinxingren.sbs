@@ -1,0 +1,42 @@
+# Nginx 生产环境配置参考 (yinxingren.sbs)
+server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name yinxingren.sbs;
+
+    root /var/www/yinxingren.sbs/dist;
+    index index.html;
+
+    # 1. 规范化重定向：非斜杠路径 301 重定向到带斜杠的规范 Canonical 地址
+    rewrite ^/services$ /services/ permanent;
+    rewrite ^/advantages$ /advantages/ permanent;
+    rewrite ^/locations$ /locations/ permanent;
+    rewrite ^/pricing$ /pricing/ permanent;
+    rewrite ^/help$ /help/ permanent;
+    rewrite ^/downloads$ /downloads/ permanent;
+    rewrite ^/contact$ /contact/ permanent;
+    rewrite ^/terms$ /terms/ permanent;
+    rewrite ^/privacy$ /privacy/ permanent;
+
+    # 2. 静态页面与资源请求匹配
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # 3. 真实 HTTP 404 响应（返回 404 状态码，禁止返回 200 掩盖缺失页面）
+    error_page 404 /404.html;
+    location = /404.html {
+        internal;
+    }
+
+    # 4. 静态资源缓存控制
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
+        expires 1y;
+        add_header Cache-Control "public, no-transform";
+    }
+
+    # 5. 安全响应头
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+}

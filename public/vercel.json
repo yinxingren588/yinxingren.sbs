@@ -1,0 +1,17 @@
+{
+  "trailingSlash": true,
+  "cleanUrls": false,
+  "routes": [
+    { "src": "/services", "status": 301, "headers": { "Location": "/services/" } },
+    { "src": "/advantages", "status": 301, "headers": { "Location": "/advantages/" } },
+    { "src": "/locations", "status": 301, "headers": { "Location": "/locations/" } },
+    { "src": "/pricing", "status": 301, "headers": { "Location": "/pricing/" } },
+    { "src": "/help", "status": 301, "headers": { "Location": "/help/" } },
+    { "src": "/downloads", "status": 301, "headers": { "Location": "/downloads/" } },
+    { "src": "/contact", "status": 301, "headers": { "Location": "/contact/" } },
+    { "src": "/terms", "status": 301, "headers": { "Location": "/terms/" } },
+    { "src": "/privacy", "status": 301, "headers": { "Location": "/privacy/" } },
+    { "handle": "filesystem" },
+    { "src": "/.*", "status": 404, "dest": "/404.html" }
+  ]
+}

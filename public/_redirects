@@ -1,0 +1,15 @@
+# 隐形人 (yinxingren.sbs) 规范化路由与 404 配置 (适用 Cloudflare Pages / Netlify)
+
+# 1. 规范化重定向：无末尾斜杠 301 重定向至带斜杠的正式 Canonical URL
+/services   /services/   301
+/advantages /advantages/ 301
+/locations  /locations/  301
+/pricing    /pricing/    301
+/help       /help/       301
+/downloads  /downloads/  301
+/contact    /contact/    301
+/terms      /terms/      301
+/privacy    /privacy/    301
+
+# 2. 真实 404 错误页响应（严格返回 HTTP 404 状态码，禁止返回 200 掩盖缺失页面）
+/*          /404.html    404

@@ -1,0 +1,56 @@
+# 隐形人 (yinxingren.sbs) - Apache / cPanel / 老薛主机生产环境配置
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 1. 规范化重定向：非斜杠路径 301 重定向到带斜杠的规范 Canonical 地址
+    RewriteRule ^services$ /services/ [R=301,L]
+    RewriteRule ^advantages$ /advantages/ [R=301,L]
+    RewriteRule ^locations$ /locations/ [R=301,L]
+    RewriteRule ^pricing$ /pricing/ [R=301,L]
+    RewriteRule ^help$ /help/ [R=301,L]
+    RewriteRule ^downloads$ /downloads/ [R=301,L]
+    RewriteRule ^contact$ /contact/ [R=301,L]
+    RewriteRule ^terms$ /terms/ [R=301,L]
+    RewriteRule ^privacy$ /privacy/ [R=301,L]
+
+    # 2. 静态页面匹配：优先查找文件与目录
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+</IfModule>
+
+# 3. 真实 HTTP 404 响应页面
+ErrorDocument 404 /404.html
+
+# 4. 默认主页
+DirectoryIndex index.html
+
+# 5. 静态资源缓存控制 (提高访问速度)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/xml "access plus 0 seconds"
+    ExpiresByType application/xml "access plus 0 seconds"
+    ExpiresByType text/plain "access plus 0 seconds"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# 6. Gzip 压缩支持
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# 7. 安全响应头
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
