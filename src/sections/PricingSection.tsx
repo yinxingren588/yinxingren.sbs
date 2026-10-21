@@ -14,10 +14,10 @@ export const PricingSection: React.FC = () => {
             <span>OFFICIAL PLANS & PACKAGES</span>
           </div>
           <h2 id="pricing-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-text-heading tracking-tight mb-4">
-            隐形人 9 大官方主力配套与规格
+            隐形人机场 9 大官方主力配套与规格 - 隐形人官网
           </h2>
           <p className="text-base text-brand-text-body leading-relaxed">
-            数据源自官方收银台核验凭据。包含 6 档日常与团队周期订阅方案及 3 档永不过期的一次性独立买断包。
+            数据源自隐形人官网最新核验凭据。包含隐形人机场 6 档日常与团队周期订阅方案（全IPLC专线、晚高峰不限速）及 3 档永不过期的一次性独立买断包。
           </p>
         </div>
 

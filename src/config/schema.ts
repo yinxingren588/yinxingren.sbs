@@ -40,13 +40,13 @@ export function getStructuredDataForRoute(path: string): object | null {
   const websiteId = `${SITE_URL}/#website`;
   const webpageId = `${seo.canonical}#webpage`;
 
-  // 1. 全站通用 WebSite 根节点声明（真实反映第三方指引站身份，绝不声明虚构的 SearchAction）
+  // 1. 全站通用 WebSite 根节点声明（包含隐形人官网与隐形人机场别名，强力承接搜索意图）
   const websiteSchema = {
     '@type': 'WebSite',
     '@id': websiteId,
     url: `${SITE_URL}/`,
-    name: BRAND_NAME,
-    alternateName: BRAND_NAME_EN,
+    name: '隐形人官网',
+    alternateName: [BRAND_NAME, '隐形人机场', '隐形人机场官网', BRAND_NAME_EN],
     description: SEO_PAGES['/'].description,
     inLanguage: 'zh-CN',
   };

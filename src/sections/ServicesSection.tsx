@@ -17,11 +17,11 @@ export const ServicesSection: React.FC = () => {
             </div>
 
             <h2 id="services-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-text-heading tracking-tight">
-              透明轻量，兼顾灵活性与隐私边界的网络服务体系
+              隐形人机场服务体系：透明轻量、全IPLC专线的网络架构
             </h2>
 
             <p className="text-base text-brand-text-body leading-relaxed max-w-2xl">
-              隐形人合作平台采用当代主流的分流路由机制与加密传输协议，致力于为数字工作者打造低侵入、高透明的网络中继环境。无需强制依赖专有全家桶软件，通过通用协议标准即可快捷集成。
+              隐形人官网为广大用户提供隐形人机场的主流分流路由机制与专线加密传输体系，致力于为数字工作者打造低侵入、高透明的网络中继环境。无需强制依赖专有全家桶软件，通过通用协议标准即可快捷集成。
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

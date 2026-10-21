@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND_NAME, SITE_URL } from '../config/site';
+import { BRAND_NAME, OFFICIAL_KEYWORD, SITE_URL } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import { ChevronRight, Home, Scale } from 'lucide-react';
 
 export const TermsPage: React.FC = () => {
   useEffect(() => {
-    document.title = '服务条款与免责声明 - 隐形人';
+    document.title = SEO_PAGES['/terms/'].title;
   }, []);
 
   return (
@@ -29,7 +30,7 @@ export const TermsPage: React.FC = () => {
             <span>TERMS OF SERVICE</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-text-heading tracking-tight mb-4">
-            {BRAND_NAME}服务条款与使用协议
+            {BRAND_NAME}服务条款与使用协议 - {OFFICIAL_KEYWORD}
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-brand-text-subtle">
             <span>发布生效日期：2026年10月17日</span>

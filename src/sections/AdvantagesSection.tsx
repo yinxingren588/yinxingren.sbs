@@ -13,10 +13,10 @@ export const AdvantagesSection: React.FC = () => {
             <span>CORE ADVANTAGES</span>
           </div>
           <h2 id="advantages-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-text-heading tracking-tight mb-4">
-            专注于纯净体验与可靠分流的核心特质
+            选择隐形人机场的核心优势：高速稳定与全IPLC专线保障
           </h2>
           <p className="text-base text-brand-text-body leading-relaxed">
-            摒弃不实夸大宣传与过度包装，回归网络中继工具在安全性、多端兼容性与规则透明度上的基础价值。
+            通过隐形人官网深入了解隐形人机场在全 IPLC 专线中继、晚高峰不限速、原生 IP 流媒体解锁及端到端隐私隔离上的扎实优势。
           </p>
         </div>
 

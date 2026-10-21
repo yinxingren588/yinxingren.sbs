@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND_NAME, SITE_URL } from '../config/site';
+import { BRAND_NAME, OFFICIAL_KEYWORD, SITE_URL } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import { ChevronRight, Home, Lock } from 'lucide-react';
 
 export const PrivacyPage: React.FC = () => {
   useEffect(() => {
-    document.title = '隐私权保护政策 - 隐形人';
+    document.title = SEO_PAGES['/privacy/'].title;
   }, []);
 
   return (
@@ -29,7 +30,7 @@ export const PrivacyPage: React.FC = () => {
             <span>PRIVACY POLICY</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-text-heading tracking-tight mb-4">
-            {BRAND_NAME}隐私保护政策与数据说明
+            {BRAND_NAME}隐私保护政策与数据说明 - {OFFICIAL_KEYWORD}
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-brand-text-subtle">
             <span>发布生效日期：2026年10月17日</span>

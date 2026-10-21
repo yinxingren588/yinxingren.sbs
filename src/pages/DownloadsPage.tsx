@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND_NAME } from '../config/site';
+import { AIRPORT_KEYWORD, OFFICIAL_KEYWORD } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import { OfficialLink } from '../components/OfficialLink';
 import {
   ChevronRight,
@@ -15,7 +16,7 @@ import {
 
 export const DownloadsPage: React.FC = () => {
   useEffect(() => {
-    document.title = '客户端下载与安装 - 隐形人';
+    document.title = SEO_PAGES['/downloads/'].title;
   }, []);
 
   const platforms = [
@@ -89,7 +90,7 @@ export const DownloadsPage: React.FC = () => {
             <span>CLIENT ACQUISITION & INTEGRATION</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-text-heading tracking-tight mb-6">
-            {BRAND_NAME}客户端获取与多端配置指引
+            {AIRPORT_KEYWORD}客户端下载与多端配置指引 - {OFFICIAL_KEYWORD}
           </h1>
           <p className="text-base sm:text-lg text-brand-text-body leading-relaxed">
             汇聚主流操作系统通用客户端获取路径与订阅导入说明。本站秉持真实透明原则，不提供来源不明的本地打包安装程序，所有适用配置资源均引导至合作平台安全校验获取。

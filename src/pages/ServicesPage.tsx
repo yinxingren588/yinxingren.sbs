@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND_NAME } from '../config/site';
+import { BRAND_NAME, AIRPORT_KEYWORD, OFFICIAL_KEYWORD } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import {
   ChevronRight,
   Home,
@@ -17,7 +18,7 @@ import {
 
 export const ServicesPage: React.FC = () => {
   useEffect(() => {
-    document.title = '服务介绍与传输架构 - 隐形人';
+    document.title = SEO_PAGES['/services/'].title;
   }, []);
 
   const workflowSteps = [
@@ -85,7 +86,7 @@ export const ServicesPage: React.FC = () => {
             <span>SERVICE ARCHITECTURE OVERVIEW</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-text-heading tracking-tight mb-6">
-            {BRAND_NAME}网络中继服务与接入架构概览
+            {AIRPORT_KEYWORD}服务体系与网络分流架构概览 - {OFFICIAL_KEYWORD}
           </h1>
           <p className="text-base sm:text-lg text-brand-text-body leading-relaxed">
             深入了解{BRAND_NAME}合作平台所采用的分流路由机制、主流通用传输协议与端到端安全隔离原理。我们致力于为跨域研发、海外学术与数字出海团队提供清晰、透明、低侵入的中继服务指引。

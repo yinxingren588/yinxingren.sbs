@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  BRAND_NAME,
+  OFFICIAL_KEYWORD,
   TELEGRAM_CHANNEL_URL,
   TELEGRAM_GROUP_URL,
 } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import { OfficialLink } from '../components/OfficialLink';
 import {
   ChevronRight,
@@ -22,7 +23,7 @@ import {
 
 export const ContactPage: React.FC = () => {
   useEffect(() => {
-    document.title = '联系方式与交流社群 - 隐形人';
+    document.title = SEO_PAGES['/contact/'].title;
   }, []);
 
   return (
@@ -46,7 +47,7 @@ export const ContactPage: React.FC = () => {
             <span>COMMUNICATION & SUPPORT CHANNELS</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-text-heading tracking-tight mb-6">
-            {BRAND_NAME}联系方式与社区支持渠道
+            联系我们与Telegram官方社群 - {OFFICIAL_KEYWORD}
           </h1>
           <p className="text-base sm:text-lg text-brand-text-body leading-relaxed">
             为保障沟通效率与信息安全，我们明确划分不同事务的处理渠道：常见技术使用疑惑优先查阅帮助中心，账户与订单问题由合作平台客服承办，网络动态与技术互助通过官方 Telegram 社区同步。

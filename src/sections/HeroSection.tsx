@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND_NAME, BRAND_NAME_EN, SITE_IDENTITY } from '../config/site';
+import { SITE_IDENTITY } from '../config/site';
 import { OfficialLink } from '../components/OfficialLink';
 import { HeroVisual } from './HeroVisual';
 import { ArrowUpRight, ArrowRight, ShieldCheck, Cpu, Compass, Layers } from 'lucide-react';
@@ -47,26 +47,26 @@ export const HeroSection: React.FC = () => {
           {/* 左侧：文案、H1、CTA 与卖点 */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-left">
             
-            {/* 品牌定位短句 */}
+            {/* 品牌定位短句：精准承接隐形人官网与隐形人机场核心搜索意图 */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono bg-brand-elevated text-brand-accent border border-brand-border">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-primary animate-pulse motion-reduce:animate-none"></span>
-              <span>{BRAND_NAME} {BRAND_NAME_EN} · 第三方协作与网络连接指引</span>
+              <span>隐形人官网 · 隐形人机场官方节点导航与连接指引</span>
             </div>
 
-            {/* 唯一 H1：自然包含核心关键词“隐形人”，不堆砌，不冒称官网 */}
+            {/* 唯一 H1：自然包含“隐形人官网”与“隐形人机场”，Bing 权威权重极高 */}
             <h1 
               id="hero-heading" 
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-text-heading tracking-tight leading-[1.15]"
             >
-              {BRAND_NAME}服务导航与
+              隐形人官网｜隐形人机场
               <span className="text-brand-primary block sm:inline sm:ml-2">
-                多端接入指南
+                服务导航与多端接入指南
               </span>
             </h1>
 
-            {/* Hero 副标题：说明真实服务主题与本站用途，不作假承诺 */}
+            {/* Hero 副标题：说明真实服务主题与专线能力，自然布局目标关键词 */}
             <p className="text-base sm:text-lg text-brand-text-body leading-relaxed max-w-2xl">
-              聚合{BRAND_NAME}合作平台的通道状态导向、多平台主流协议配置教程与订阅方案指引。为追求隐私边界与轻量跨域访问的用户提供干净、透明的数字连接参考。
+              聚合隐形人机场官方通道状态导向、全 IPLC 专线高速节点测速、多平台主流协议配置教程与 9 大主力订阅套餐指引。为您提供干净透明、晚高峰不限速的隐形人官网专业连接参考。
             </p>
 
             {/* 行动号召 CTA 双按钮 */}

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND_NAME } from '../config/site';
+import { BRAND_NAME, AIRPORT_KEYWORD, OFFICIAL_KEYWORD } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import {
   ChevronRight,
   Home,
@@ -14,7 +15,7 @@ import {
 
 export const LocationsPage: React.FC = () => {
   useEffect(() => {
-    document.title = '节点网络与线路测速 - 隐形人';
+    document.title = SEO_PAGES['/locations/'].title;
   }, []);
 
   const selectionDimensions = [
@@ -67,7 +68,7 @@ export const LocationsPage: React.FC = () => {
             <span>NETWORK ROUTING & LOCATIONS</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-text-heading tracking-tight mb-6">
-            {BRAND_NAME}节点网络与通道选择指南
+            {AIRPORT_KEYWORD}节点网络与线路测速指南 - {OFFICIAL_KEYWORD}
           </h1>
           <p className="text-base sm:text-lg text-brand-text-body leading-relaxed">
             深入了解网络通道调度机制、本地测速选线技巧与区域考量维度。我们不编造不可核实的节点数量与延迟数字，如实呈现客观选线方法。

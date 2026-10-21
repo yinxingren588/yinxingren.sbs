@@ -9,6 +9,8 @@ export const SITE_URL = 'https://yinxingren.sbs';
 export const OFFICIAL_URL = 'https://varnexa.invisibleaff.com/#/?code=JF4seZUy';
 export const PRIMARY_KEYWORD = '隐形人';
 export const SECONDARY_KEYWORD = '隐形人官网';
+export const AIRPORT_KEYWORD = '隐形人机场';
+export const OFFICIAL_KEYWORD = '隐形人官网';
 export const TELEGRAM_CHANNEL_URL = 'https://t.me/+diFXhmhTx-E4Mjc1';
 export const TELEGRAM_GROUP_URL = 'https://t.me/+YnHn1D4JK7c2Yjg1';
 
@@ -20,7 +22,7 @@ export const SITE_IDENTITY = {
   isOfficial: false,
   role: 'THIRD_PARTY_PARTNER_GUIDE',
   displayName: '第三方合作平台导航与服务指引站',
-  description: '专注于为跨域浏览、多终端互联及数字工作流提供信息聚合、线路导航与配置指引的第三方专业服务站。',
+  description: '隐形人官网专注于为跨域浏览与多终端互联提供隐形人机场节点线路导航、9大主力套餐规格说明与客户端配置教程。',
   verificationStatus: '未确认官方自营或直接授权，定位为第三方信息展示与合作导航站',
   commercialNotice: '本站包含推广链接，通过相关链接完成订阅，本站可能获得佣金。实际价格、服务与售后以合作平台为准。',
 } as const;
@@ -33,7 +35,7 @@ export const BRAND_SYSTEM = {
   name: BRAND_NAME,
   englishName: BRAND_NAME_EN,
   slogan: '无形连接，通达无界',
-  tagline: '专业稳定的跨域网络指南与合作通道导航',
+  tagline: '隐形人官网 - 专业稳定的隐形人机场专线节点导航与多端接入指南',
   targetAudience: '追求网络连接简洁稳定、重视个人数字化隐私边界、需要多端设备（Windows/macOS/iOS/Android）便捷接入与网络导航的开发者、跨国协作人员及数字游民。',
   sellingPoints: [
     {

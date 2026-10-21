@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { PlanGuide } from '../components/PlanGuide';
-import { BRAND_NAME } from '../config/site';
+import { BRAND_NAME, AIRPORT_KEYWORD, OFFICIAL_KEYWORD } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import { ChevronRight, Home, HelpCircle } from 'lucide-react';
 
 export const PricingPage: React.FC = () => {
   useEffect(() => {
-    document.title = '套餐方案与选购指引 - 隐形人';
+    document.title = SEO_PAGES['/pricing/'].title;
   }, []);
 
   return (
@@ -30,7 +31,7 @@ export const PricingPage: React.FC = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-text-heading tracking-tight mb-6">
-            {BRAND_NAME}套餐方案与选购指引
+            {AIRPORT_KEYWORD}套餐价格与9大规格方案说明 - {OFFICIAL_KEYWORD}
           </h1>
 
           <p className="text-base sm:text-lg text-brand-text-body leading-relaxed">

@@ -1,18 +1,18 @@
 {
   "key": "a96367dd7287a2cbd9b735f8d5cc06a4",
-  "lastRunAt": "2026-10-17T10:08:25.898Z",
-  "lastSubmittedAt": null,
+  "lastRunAt": "2026-10-21T09:37:20.590Z",
+  "lastSubmittedAt": "2026-10-21T09:37:23.030Z",
   "pageFingerprints": {
-    "https://yinxingren.sbs/": "60d05192e649caaf8b6ed2a444c0db4d31e12749f30247d026d59924ff778063",
-    "https://yinxingren.sbs/services/": "ab8364994ec4d68f1ab04f6db63a65c778552f03609a3c762aeb4a862d8d7618",
-    "https://yinxingren.sbs/advantages/": "5616e4a6f1aae2243e73bca64c70f51d493b2edff78e4937c1f54c006b6295d5",
-    "https://yinxingren.sbs/locations/": "b4a37f7532c93e91d272432aa09607d47c2cfd03628fb13f9453516d28ef4f2f",
-    "https://yinxingren.sbs/pricing/": "b0bd46c560fce643f4500066712c4b132ae5f7b711d6819dd84db08c8257ab06",
-    "https://yinxingren.sbs/help/": "f1fe8027c1f739b5808adc4fd3b8f6a57ec272c8f1b2c47535b5dee683d1d980",
-    "https://yinxingren.sbs/downloads/": "d2ac2469f158d89238d8c144291cc6160ffe9e1a775145ced25485f042537eba",
-    "https://yinxingren.sbs/contact/": "9bb472993cb7cab36232b86aaa65eed80eb11261932fbab9809caa287de385aa",
-    "https://yinxingren.sbs/terms/": "e736cc5eff602ac99453c83301f0ef9441f842d50f9f414168a47bd8ca802523",
-    "https://yinxingren.sbs/privacy/": "7b1561920bdb1768c0bff15af802c90ecfb890dd2f142eb8deaac8fbe44e816c"
+    "https://yinxingren.sbs/": "138ed160b9b1fa4c6bf147c18f554f4dd00bef7b9e033c0767403371bae10205",
+    "https://yinxingren.sbs/services/": "6fe2e3e71f8225fbfa3366ed796d145f008e34ab3912625f2c3a6e842e31b9d1",
+    "https://yinxingren.sbs/advantages/": "516f49188438e1605ee3beff9e59a2060ddcf5cec551d7712f4bb3a302943e35",
+    "https://yinxingren.sbs/locations/": "7d346aa4c8c0b68b6caefed953e82d03edabccec5b08ec9cd5ac7e68ed193443",
+    "https://yinxingren.sbs/pricing/": "3e1a1ae40ff46e4cac233fc4a61c2317fa16b55fcb487e7ee1d8e0a8c65e4ebf",
+    "https://yinxingren.sbs/help/": "2ffe9f330db0bce1ea4b6b64c09a0a667201c96b63c7b11554e87226982e6ed9",
+    "https://yinxingren.sbs/downloads/": "875d9221b1160be2013ccbb6ec50df7d0ad8c2f9850e2326e0443b7006d84d8a",
+    "https://yinxingren.sbs/contact/": "a30254da33bc307ba7f561f315088ce180ee9989685bfd282f4d05ee9661f2e8",
+    "https://yinxingren.sbs/terms/": "eb313565fe1d2aef9eb55d0a2ce4e0abe339238f4abd3b91ddb4f1861d602d2f",
+    "https://yinxingren.sbs/privacy/": "1fa27bc4207c752d56650a6c7c48c5b16a7e6632676edf3a8b3eb6a7a80af812"
   },
   "knownUrls": [
     "https://yinxingren.sbs/",

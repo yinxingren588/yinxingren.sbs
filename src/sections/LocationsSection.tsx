@@ -13,10 +13,10 @@ export const LocationsSection: React.FC = () => {
             <span>NETWORK REGIONS & SCOPE</span>
           </div>
           <h2 id="locations-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-text-heading tracking-tight mb-4">
-            线路节点与接入服务范围说明
+            隐形人机场全球节点与专线线路分布说明
           </h2>
           <p className="text-base text-brand-text-body leading-relaxed">
-            如实呈现中继服务原理，不夸大宣传覆盖规模，所有可用通道以客户端实时检测为准。
+            隐形人官网整理隐形人机场在亚太、美洲与欧洲的核心专线节点分布与通道特点，支持一键导入订阅与本地实时测速。
           </p>
         </div>
 

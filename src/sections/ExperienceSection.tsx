@@ -131,10 +131,10 @@ export const ExperienceSection: React.FC = () => {
               <span>USAGE EXPERIENCES</span>
             </div>
             <h2 id="experiences-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-text-heading tracking-tight mb-3">
-              典型使用场景与体验示例
+              隐形人机场典型使用场景与体验示例
             </h2>
             <p className="text-base text-brand-text-body leading-relaxed">
-              汇集不同角色在真实工作流中的接入模式与使用参考，了解多样化数字协同场景。
+              隐形人官网整理不同角色使用隐形人机场在日常研发、学术查阅、流媒体播放及跨国业务中的典型体验参考。
             </p>
           </div>
 

@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND_NAME } from '../config/site';
+import { AIRPORT_KEYWORD, OFFICIAL_KEYWORD } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import { HELP_ARTICLES, HELP_CATEGORIES } from '../data/helpData';
 import {
   ChevronRight,
@@ -20,7 +21,7 @@ export const HelpPage: React.FC = () => {
   const [expandedId, setExpandedId] = useState<string | null>('help-01');
 
   useEffect(() => {
-    document.title = '帮助中心与排错指引 - 隐形人';
+    document.title = SEO_PAGES['/help/'].title;
   }, []);
 
   // 纯前端动态搜索与分类过滤
@@ -85,7 +86,7 @@ export const HelpPage: React.FC = () => {
             <span>KNOWLEDGE BASE & GUIDES</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-text-heading tracking-tight mb-6">
-            {BRAND_NAME}帮助中心与排错指引
+            {AIRPORT_KEYWORD}使用教程与常见排错帮助中心 - {OFFICIAL_KEYWORD}
           </h1>
           <p className="text-base sm:text-lg text-brand-text-body leading-relaxed">
             为您整理从入门连接、订阅选购、通用客户端分流模式设置，到常见多设备并发排错的标准化知识库。所有内容在当前页面即时展开，不产生额外跳转路由。

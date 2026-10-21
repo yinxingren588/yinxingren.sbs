@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND_NAME } from '../config/site';
+import { AIRPORT_KEYWORD, OFFICIAL_KEYWORD } from '../config/site';
+import { SEO_PAGES } from '../config/seo';
 import {
   ChevronRight,
   Home,
@@ -19,7 +20,7 @@ import {
 
 export const AdvantagesPage: React.FC = () => {
   useEffect(() => {
-    document.title = '核心优势与隐私保护 - 隐形人';
+    document.title = SEO_PAGES['/advantages/'].title;
   }, []);
 
   const advantages = [
@@ -93,7 +94,7 @@ export const AdvantagesPage: React.FC = () => {
             <span>CORE ADVANTAGES & VALUE</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-text-heading tracking-tight mb-6">
-            {BRAND_NAME}核心优势与架构选型考量
+            {AIRPORT_KEYWORD}核心优势与专线选型考量 - {OFFICIAL_KEYWORD}
           </h1>
           <p className="text-base sm:text-lg text-brand-text-body leading-relaxed">
             在纷繁复杂的网络服务市场中，我们坚持不以虚假数值宣传为噱头，不编造贬低同行的对比结论。以下 5 项核心特质源于真实的架构设计哲学与规范化工程实践。

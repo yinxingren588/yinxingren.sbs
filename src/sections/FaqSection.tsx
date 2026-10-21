@@ -28,10 +28,10 @@ export const FaqSection: React.FC = () => {
             <span>FREQUENTLY ASKED QUESTIONS</span>
           </div>
           <h2 id="faq-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-text-heading tracking-tight mb-4">
-            常见问题解答与入口核验说明
+            隐形人官网与隐形人机场常见问题解答
           </h2>
           <p className="text-base text-brand-text-body leading-relaxed">
-            围绕套餐挑选、多端配置、身份核实与日常连接排错提供清晰客观的解答。
+            围绕隐形人机场专线节点、订阅套餐选购、官方入口核对与常见排错技巧提供权威解答。
           </p>
         </div>
 
